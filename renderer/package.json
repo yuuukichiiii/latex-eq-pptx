@@ -1,0 +1,23 @@
+{
+  "name": "latex-renderer",
+  "version": "1.0.0",
+  "description": "Offline LaTeX to PNG renderer (MathJax 3 + resvg-js)",
+  "main": "render.js",
+  "scripts": {
+    "build": "pkg render.js --target node20-win-x64 --output ../dist-exe/latex-renderer.exe --compress GZip"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "mathjax-full": "^3.2.2"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "scripts": "render.js",
+    "assets": [
+      "node_modules/@resvg/resvg-js-win32-x64-msvc/*.node",
+      "node_modules/@resvg/resvg-js-win32-ia32-msvc/*.node"
+    ]
+  }
+}

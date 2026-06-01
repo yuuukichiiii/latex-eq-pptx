@@ -1,5 +1,7 @@
 node_modules/
 dist/
+dist-exe/
+dist-test*.png
 .DS_Store
 *.log
 .env
