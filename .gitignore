@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+
+# Claude Code
+.claude/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Office dev certs (generated locally)
+.office-addin-dev-certs/
